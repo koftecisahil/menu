@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köfteci Sahil - Menü</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f1220;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            padding-top: 35vh;
+        }
+
+        .menu-card {
+            background: rgba(18, 22, 35, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 24px;
+            padding: 48px 36px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #2d3a5a;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+        }
+
+        .restaurant-name {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        .restaurant-name .main {
+            display: block;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+
+        .restaurant-name .separator {
+            color: #60a5fa;
+            margin: 0 4px;
+        }
+
+        .restaurant-name .sub {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #a0a0a0;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #2d6fba, #60a5fa);
+            margin: 16px auto 32px;
+            border-radius: 2px;
+        }
+
+        .section-title {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #888;
+            margin-bottom: 24px;
+        }
+
+        .menu-section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1a2235;
+            padding: 20px 24px;
+            border-radius: 16px;
+            border: 1px solid #2d3a5a;
+            transition: border-color 0.2s;
+        }
+
+        .menu-item:hover {
+            border-color: #60a5fa;
+        }
+
+        .item-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #f0f0f0;
+        }
+
+        .item-price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #60a5fa;
+            white-space: nowrap;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-card">
+        <p class="section-title">Ana Yemek</p>
+        <div class="menu-section">
+            <div class="menu-item">
+                <span class="item-name">Yarım Ekmek Köfte</span>
+                <span class="item-price">₺200</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Çeyrek Ekmek Köfte</span>
+                <span class="item-price">₺100</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Üç Çeyrek Ekmek Köfte</span>
+                <span class="item-price">₺300</span>
+            </div>
+        </div>
+
+        <p class="section-title">Yan Ürünler</p>
+        <div class="menu-section">
+            <div class="menu-item">
+                <span class="item-name">Az Patates Kızartması</span>
+                <span class="item-price">₺75</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Patates Kızartması</span>
+                <span class="item-price">₺100</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Patates Ekmek</span>
+                <span class="item-price">₺125</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Duble Patates</span>
+                <span class="item-price">₺125</span>
+            </div>
+        </div>
+
+        <p class="section-title">Tatlılar</p>
+        <div class="menu-section">
+            <div class="menu-item">
+                <span class="item-name">Sütlü Peynir Tatlısı</span>
+                <span class="item-price">₺75</span>
+            </div>
+        </div>
+
+        <p class="section-title">İçecekler</p>
+        <div class="menu-section">
+            <div class="menu-item">
+                <span class="item-name">Küçük Ayran</span>
+                <span class="item-price">₺25</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Büyük Ayran</span>
+                <span class="item-price">₺40</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Uludağ Şişe Gazoz</span>
+                <span class="item-price">₺40</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Uludağ Şişe Portakal</span>
+                <span class="item-price">₺40</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Kola Turka</span>
+                <span class="item-price">₺40</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Uludağ Su</span>
+                <span class="item-price">₺20</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Kutu Uludağ Gazoz</span>
+                <span class="item-price">₺50</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Kutu Portakal</span>
+                <span class="item-price">₺50</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Sarıyer Kola</span>
+                <span class="item-price">₺50</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Pet Şişe Kola</span>
+                <span class="item-price">₺30</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Şıra</span>
+                <span class="item-price">₺60</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Limonata</span>
+                <span class="item-price">₺40</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Doğanay Acılı Şalgam</span>
+                <span class="item-price">₺40</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Sade Soda</span>
+                <span class="item-price">₺20</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Meyveli Soda</span>
+                <span class="item-price">₺30</span>
+            </div>
+        </div>
+
+        <p class="footer">Afiyet olsun!</p>
+    </div>
+</body>
+</html>
