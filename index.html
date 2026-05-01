@@ -15,17 +15,26 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #0f1220;
-            background-image: url('bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background: #2a2d30;
             min-height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 20px;
-            padding-top: 35vh;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px 20px;
+        }
+
+        .header-logo {
+            width: 100%;
+            max-width: 420px;
+            padding: 32px 0 24px;
+            overflow: hidden;
+        }
+
+        .header-logo img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: -8%;
         }
 
         .menu-card {
@@ -56,7 +65,7 @@
         }
 
         .restaurant-name .separator {
-            color: #60a5fa;
+            color: #00d4f5;
             margin: 0 4px;
         }
 
@@ -69,7 +78,7 @@
         .divider {
             width: 60px;
             height: 3px;
-            background: linear-gradient(90deg, #2d6fba, #60a5fa);
+            background: linear-gradient(90deg, #009bb5, #00d4f5);
             margin: 16px auto 32px;
             border-radius: 2px;
         }
@@ -102,7 +111,7 @@
         }
 
         .menu-item:hover {
-            border-color: #60a5fa;
+            border-color: #00d4f5;
         }
 
         .item-name {
@@ -114,7 +123,7 @@
         .item-price {
             font-size: 1.1rem;
             font-weight: 600;
-            color: #60a5fa;
+            color: #00d4f5;
             white-space: nowrap;
         }
 
@@ -126,6 +135,9 @@
     </style>
 </head>
 <body>
+    <div class="header-logo">
+        <img src="tabela.jpg" alt="Köfteci Sahil">
+    </div>
     <div class="menu-card">
         <p class="section-title">Ana Yemek</p>
         <div class="menu-section">
